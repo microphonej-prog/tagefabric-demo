@@ -264,3 +264,17 @@
   }
   .site-header .lang-switch-mobile a { flex: 1 1 0; text-align: center; padding: 8px 4px; font-size: 13px; }
 }
+
+/* —— 语言切换改用国旗 —— */
+.site-header .lang-switch a { line-height: 0; padding: 4px 6px; }
+.site-header .lang-switch svg { display: block; border-radius: 2px; opacity: .72; transition: opacity .2s, box-shadow .2s; }
+.site-header .lang-switch a:hover svg { opacity: 1; }
+.site-header .lang-switch a.on { background: transparent !important; border-color: transparent; }
+.site-header .lang-switch a.on svg { opacity: 1; box-shadow: 0 0 0 2px var(--amber); }
+@media (max-width: 1120px) {
+  .site-header .lang-switch a { padding: 3px 5px; }
+}
+@media (max-width: 900px) {
+  .site-header .lang-switch-mobile a { padding: 8px 6px; }
+  .site-header .lang-switch-mobile svg { width: 26px; height: 18px; margin: 0 auto; }
+}
