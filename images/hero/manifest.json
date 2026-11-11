@@ -85,13 +85,25 @@
  },
  {
   "file": "images/hero/hero-20.jpg",
-  "note": "冥想/讲座场景 B&W（4000×2626） · 输出 2400×1350 渐进 JPEG",
-  "size": "2400x1350",
+  "note": "篮球比赛（Lakers #22 vs New York）· 2000×1125（源图颗粒重，降尺寸保清晰度）",
+  "size": "2000x1125",
   "scope": "待确认"
  },
  {
   "file": "images/hero/hero-21.jpg",
   "note": "户外团体课（垫上抬腿）B&W（2048×2048） · 输出 2400×1350 渐进 JPEG",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-22.jpg",
+  "note": "篮球比赛（Portland vs Lakers）· 2400×1350",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-23.jpg",
+  "note": "湖人 32 号倒地持球（空场+记分牌 24）· 2400×1350",
   "size": "2400x1350",
   "scope": "待确认"
  }
