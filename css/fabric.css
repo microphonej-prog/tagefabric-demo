@@ -288,3 +288,25 @@
   .site-header .brand { gap: 9px; }
   .site-header .brand-mark { width: 34px; height: 34px; font-size: 16px; }
 }
+
+/* —— 移动端：国旗组居中 + 去掉外框线条 —— */
+@media (max-width: 900px) {
+  .site-header .lang-switch.lang-switch-mobile {
+    justify-content: center;
+    gap: 14px;
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
+  .site-header .lang-switch.lang-switch-mobile a {
+    border: 0 !important;
+    width: auto;
+    padding: 4px 1px;
+  }
+  .site-header .lang-switch.lang-switch-mobile a:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
