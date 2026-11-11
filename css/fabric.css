@@ -3,12 +3,11 @@
    只加面料需要的组件，不改原有设计系统 token
    ============================================================ */
 
-/* Hero：无照片，用织物质感渐变 */
+/* Hero：本地 ComfyUI 生成的面料微距图（自有版权，无水印），叠深色蒙版保证文字对比度 */
 .hero.hero-fabric {
   background:
-    linear-gradient(115deg, rgba(22,34,46,.94) 0%, rgba(22,34,46,.78) 45%, rgba(30,52,64,.72) 100%),
-    repeating-linear-gradient(52deg, #1b2a36 0px, #1b2a36 6px, #22333f 6px, #22333f 12px);
-  background-size: cover;
+    linear-gradient(100deg, rgba(13,22,30,.94) 0%, rgba(15,26,35,.86) 42%, rgba(20,34,44,.62) 78%, rgba(24,40,50,.55) 100%),
+    url("../images/hero-fabric.jpg") center 55% / cover no-repeat;
 }
 .hero.hero-fabric::before {
   content: "";
