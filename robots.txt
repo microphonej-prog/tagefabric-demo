@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://tagefabric.com/sitemap.xml
+# DEMO 占位站：域名未定，暂不收录。
+# 正式上线：把 build_demo.py 里 DEMO_LOCK 改成 False，重跑 build_demo.py + build_i18n.py
