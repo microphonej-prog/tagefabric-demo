@@ -310,3 +310,16 @@
     border-radius: 4px;
   }
 }
+
+/* —— 移动端导航面板：稍透明 + 毛玻璃 —— */
+@media (max-width: 900px) {
+  .site-header .nav-links {
+    background: rgba(22, 34, 46, .84);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    backdrop-filter: blur(14px) saturate(120%);
+    box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .site-header .nav-links { background: rgba(22, 34, 46, .96); }
+  }
+}
