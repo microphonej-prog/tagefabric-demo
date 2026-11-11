@@ -3,11 +3,17 @@
    只加面料需要的组件，不改原有设计系统 token
    ============================================================ */
 
-/* Hero：本地 ComfyUI 生成的面料微距图（自有版权，无水印），叠深色蒙版保证文字对比度 */
+/* Hero：每次打开随机换一张背景（图由 head 内联脚本选好，写入 --hero-img / --hero-scrim）
+   背景图不参与 CLS；脚本同时 preload 选中图以减轻 LCP 压力 */
 .hero.hero-fabric {
   background:
-    linear-gradient(100deg, rgba(13,22,30,.94) 0%, rgba(15,26,35,.86) 42%, rgba(20,34,44,.62) 78%, rgba(24,40,50,.55) 100%),
-    url("../images/hero-fabric.jpg") center 55% / cover no-repeat;
+    linear-gradient(100deg,
+      rgba(13,22,30,.96) 0%,
+      rgba(15,26,35,.90) 34%,
+      rgba(18,30,40,var(--hero-scrim,.6)) 72%,
+      rgba(24,40,50,var(--hero-scrim,.6)) 100%),
+    var(--hero-img, url("../images/hero/hero-01.jpg")) center 55% / cover no-repeat;
+  background-color: #0f1a23;
 }
 .hero.hero-fabric::before {
   content: "";
