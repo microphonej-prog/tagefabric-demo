@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tagefabric.com/sitemap.xml
+Sitemap: https://tagemade.com/sitemap.xml
