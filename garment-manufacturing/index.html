@@ -44,17 +44,22 @@
 </script>
 <script>(function(){var H=[{s:"../images/hero/hero-01.jpg",o:0.55},{s:"../images/hero/hero-02.jpg",o:0.55},{s:"../images/hero/hero-03.jpg",o:0.6},{s:"../images/hero/hero-04.jpg",o:0.45}];var i=0;try{var q=JSON.parse(sessionStorage.getItem("hq")||"[]");if(!q.length){q=H.map(function(_,n){return n});for(var k=q.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=q[k];q[k]=q[j];q[j]=t;}}i=q.shift();sessionStorage.setItem("hq",JSON.stringify(q));}catch(e){i=Math.floor(Math.random()*H.length);}var h=H[i],d=document.documentElement;var u=new URL(h.s,location.href).href;d.style.setProperty("--hero-img","url("+JSON.stringify(u)+")");d.style.setProperty("--hero-scrim",h.o);var p=document.createElement("link");p.rel="preload";p.as="image";p.href=u;document.head.appendChild(p);})();</script>
 <script>(function(){var B=["../images/banner/banner-01.jpg","../images/banner/banner-02.jpg","../images/banner/banner-03.jpg","../images/banner/banner-04.jpg","../images/banner/banner-05.jpg","../images/banner/banner-06.jpg"];var i=0;try{var q=JSON.parse(sessionStorage.getItem("bq")||"[]");if(!q.length){q=B.map(function(_,n){return n});for(var k=q.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=q[k];q[k]=q[j];q[j]=t;}}i=q.shift();sessionStorage.setItem("bq",JSON.stringify(q));}catch(e){i=Math.floor(Math.random()*B.length);}var u=new URL(B[i],location.href).href;document.documentElement.style.setProperty("--banner-img","url("+JSON.stringify(u)+")");})();</script>
+<link rel="alternate" hreflang="en" href="../garment-manufacturing/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh/garment-manufacturing/">
+<link rel="alternate" hreflang="fr" href="../fr/garment-manufacturing/">
+<link rel="alternate" hreflang="ja" href="../ja/garment-manufacturing/">
+<link rel="alternate" hreflang="x-default" href="../garment-manufacturing/">
 </head>
 <body><header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="../">
       <span class="brand-mark">T</span>
-      <span class="brand-name"><strong>TAGE MADE</strong><small>FABRIC &amp; GARMENT MANUFACTURING</small></span>
+      <span class="brand-name"><strong>TAGE MADE</strong><small>APPAREL SUPPLY CHAIN</small></span>
     </a>
     <nav>
-      <ul class="nav-links" id="navLinks"><li><a href="../fabrics/">Fabrics</a></li><li><a href="../garment-manufacturing/" class="active">Garment OEM</a></li><li><a href="../custom-fabric/">Custom</a></li><li><a href="../certifications/">Certifications</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li><li><a href="../contact/" class="nav-cta">Request swatches</a></li></ul>
+      <ul class="nav-links" id="navLinks"><li><a href="../fabrics/">Fabrics</a></li><li><a href="../garment-manufacturing/" class="active">Garment OEM</a></li><li><a href="../supply-chain/">Supply chain</a></li><li><a href="../certifications/">Certifications</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li><li><a href="../contact/" class="nav-cta">Request swatches</a></li></ul>
     </nav>
-    <div class="lang-switch"><a href="../garment-manufacturing/" class="on" hreflang="en" lang="en">EN</a></div>
+    <div class="lang-switch"><a href="../garment-manufacturing/" class="on" hreflang="en" lang="en">EN</a><a href="../zh/garment-manufacturing/" hreflang="zh" lang="zh">中文</a><a href="../fr/garment-manufacturing/" hreflang="fr" lang="fr">FR</a><a href="../ja/garment-manufacturing/" hreflang="ja" lang="ja">日本語</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </div>
 </header>
