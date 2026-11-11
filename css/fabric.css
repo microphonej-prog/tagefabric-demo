@@ -104,6 +104,23 @@
 .fab-row-thumb svg { width: 100% !important; height: 100% !important; }
 
 /* —— 双品类结构 —— */
+
+/* —— 内页 banner：每次打开随机一张体育老照片（脚本写入 --banner-img）
+   ::before 的深色渐变保留，保证标题可读 —— */
+.page-hero {
+  background-image: var(--banner-img, none);
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  background-color: var(--ink);
+}
+.page-hero::before {
+  background: linear-gradient(100deg,
+    rgba(16,25,34,.90) 0%,
+    rgba(18,28,38,.78) 48%,
+    rgba(20,32,42,.62) 100%);
+}
+.page-hero h1, .page-hero p, .page-hero .crumb { text-shadow: 0 2px 14px rgba(0,0,0,.55); }
 .more-link { margin-top: 28px; }
 .more-link .link { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid var(--amber); padding-bottom: 2px; }
 .more-link .link:hover { color: #a8781d; }
