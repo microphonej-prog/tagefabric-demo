@@ -179,3 +179,30 @@
   .lang-switch { margin-left: auto; margin-right: 8px; }
   .lang-switch a { padding: 3px 6px; font-size: 12px; }
 }
+
+/* —— 顶部导航对齐修复（PC 端 6 项菜单 + 语言切换挤在一起）—— */
+.site-header .nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 72px;
+  flex-wrap: nowrap;
+}
+.site-header .brand { flex: 0 0 auto; margin-right: auto; }
+.site-header nav { flex: 0 1 auto; min-width: 0; }
+.site-header .nav-links { gap: 20px; flex-wrap: nowrap; }
+.site-header .nav-links a { font-size: 14.5px; white-space: nowrap; }
+.site-header .nav-links .nav-cta { padding: 6px 14px !important; }
+.site-header .lang-switch { margin-left: 4px; flex: 0 0 auto; gap: 4px; }
+.site-header .lang-switch a { padding: 3px 6px; font-size: 12px; }
+
+@media (max-width: 1320px) {
+  .site-header .nav-links { gap: 14px; }
+  .site-header .nav-links a { font-size: 14px; }
+  .site-header .lang-switch a { padding: 3px 5px; font-size: 11.5px; }
+}
+@media (max-width: 1120px) {
+  .site-header .nav-links { gap: 11px; }
+  .site-header .nav-links a { font-size: 13.5px; }
+  .site-header .brand-name small { display: none; }
+}
