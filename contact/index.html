@@ -9,6 +9,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23d99a2b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2316222e' font-family='Arial' font-weight='800'>T</text></svg>">
 <link rel="stylesheet" href="../css/style.css?v=1">
 <link rel="stylesheet" href="../css/fabric.css?v=1">
+<link rel="stylesheet" href="../assets/leaflet/leaflet.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TAGE FABRIC">
 <meta property="og:title" content="Contact TAGE FABRIC | Yoga Fabric Supplier &amp; Sampling">
@@ -33,6 +34,11 @@
 
 <script>(function(){var H=[{s:"../images/hero/hero-01.jpg",o:0.55},{s:"../images/hero/hero-02.jpg",o:0.55},{s:"../images/hero/hero-03.jpg",o:0.6},{s:"../images/hero/hero-04.jpg",o:0.45}];var i=0;try{var q=JSON.parse(sessionStorage.getItem("hq")||"[]");if(!q.length){q=H.map(function(_,n){return n});for(var k=q.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=q[k];q[k]=q[j];q[j]=t;}}i=q.shift();sessionStorage.setItem("hq",JSON.stringify(q));}catch(e){i=Math.floor(Math.random()*H.length);}var h=H[i],d=document.documentElement;var u=new URL(h.s,location.href).href;d.style.setProperty("--hero-img","url("+JSON.stringify(u)+")");d.style.setProperty("--hero-scrim",h.o);var p=document.createElement("link");p.rel="preload";p.as="image";p.href=u;document.head.appendChild(p);})();</script>
 <script>(function(){var B=["../images/banner/banner-01.jpg","../images/banner/banner-02.jpg","../images/banner/banner-03.jpg","../images/banner/banner-04.jpg","../images/banner/banner-05.jpg","../images/banner/banner-06.jpg"];var i=0;try{var q=JSON.parse(sessionStorage.getItem("bq")||"[]");if(!q.length){q=B.map(function(_,n){return n});for(var k=q.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=q[k];q[k]=q[j];q[j]=t;}}i=q.shift();sessionStorage.setItem("bq",JSON.stringify(q));}catch(e){i=Math.floor(Math.random()*B.length);}var u=new URL(B[i],location.href).href;document.documentElement.style.setProperty("--banner-img","url("+JSON.stringify(u)+")");})();</script>
+<link rel="alternate" hreflang="en" href="../contact/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh/contact/">
+<link rel="alternate" hreflang="fr" href="../fr/contact/">
+<link rel="alternate" hreflang="ja" href="../ja/contact/">
+<link rel="alternate" hreflang="x-default" href="../contact/">
 </head>
 <body><header class="site-header">
   <div class="container nav-wrap">
@@ -43,6 +49,7 @@
     <nav>
       <ul class="nav-links" id="navLinks"><li><a href="../fabrics/">Fabrics</a></li><li><a href="../custom-fabric/">Custom</a></li><li><a href="../certifications/">Certifications</a></li><li><a href="../about/">About</a></li><li><a href="../contact/" class="active">Contact</a></li><li><a href="../contact/" class="nav-cta">Request swatches</a></li></ul>
     </nav>
+    <div class="lang-switch"><a href="../contact/" class="on" hreflang="en" lang="en">EN</a><a href="../zh/contact/" hreflang="zh" lang="zh">中文</a><a href="../fr/contact/" hreflang="fr" lang="fr">FR</a><a href="../ja/contact/" hreflang="ja" lang="ja">日本語</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </div>
 </header>
@@ -59,9 +66,11 @@
       <div>
         <div class="contact-item"><div class="ico">✉</div><div><h4>Email</h4><a href="mailto:sales@taigetag.com">sales@taigetag.com</a></div></div>
         <div class="contact-item"><div class="ico">☎</div><div><h4>Phone / WeChat</h4><a href="tel:+8613128118931">+86 131 2811 8931</a></div></div>
-        <div class="contact-item"><div class="ico">◎</div><div><h4>Studio</h4><p>Room 1042, Building 2, Liansheng Plaza, 143 Liansheng Road, Humen, Dongguan, Guangdong, China</p></div></div>
+        <div class="contact-item"><div class="ico">◎</div><div><h4>Office</h4><p>Room 1042, Building 2, Liansheng Plaza, 143 Liansheng Road, Humen, Dongguan, Guangdong, China</p><p class="coords">📍 22.8354°N, 113.6764°E</p></div></div>
         <div class="contact-item"><div class="ico">⏱</div><div><h4>Response time</h4><p>Within one working day, China Standard Time (GMT+8).</p></div></div>
         <div class="contact-item"><div class="ico">📦</div><div><h4>Swatch dispatch</h4><p>3–5 working days by express, tracked.</p></div></div>
+        <div class="map-wrap"><div id="map"></div></div>
+        <p class="map-links"><a href="https://www.openstreetmap.org/?mlat=22.8354&amp;mlon=113.6764#map=16/22.8354/113.6764" target="_blank" rel="noopener">Open in OpenStreetMap</a> · <a href="https://uri.amap.com/marker?position=113.6764,22.8354&amp;name=TAGE%20FABRIC" target="_blank" rel="noopener">高德地图</a></p>
       </div>
       <div class="inquiry-form">
         <h3>Inquiry</h3>
@@ -74,7 +83,7 @@
         <div class="form-group"><label>Fabric of interest</label>
           <select>
             <option>Not sure — advise me</option>
-            <option>Nude-Feel Brushed Nylon Spandex</option><option>Ultrafine 15D/20D Second-Skin Nylon</option><option>High-Compression Nylon Spandex 85/15</option><option>GRS Recycled Nylon Spandex</option><option>Polyester Spandex Interlock</option><option>Ribbed Knit & Jacquard</option><option>Ponte Roma Double Knit</option>
+            <option>Nude-Feel Brushed Nylon Spandex</option><option>Ultrafine 15D/20D Second-Skin Nylon</option><option>High-Compression Nylon Spandex 85/15</option><option>GRS Recycled Nylon Spandex</option><option>Polyester Spandex Interlock</option><option>Ribbed Knit & Jacquard</option><option>Ponte Roma Double Knit</option><option>Moisture-Wicking Single Jersey</option><option>Chlorine-Resistant Swimwear Knit</option><option>Athletic Mesh & Eyelet Knit</option><option>Brushed Fleece & French Terry</option><option>High-Density Cycling Compression Knit</option><option>4-Way Stretch Woven</option>
           </select>
         </div>
         <div class="form-group"><label>Colour reference &amp; quantity</label><input type="text" placeholder="e.g. Pantone 19-4013, 600 kg"></div>
@@ -85,6 +94,23 @@
     </div>
   </div>
 </section>
+<script src="../assets/leaflet/leaflet.js"></script>
+<script>
+(function() {
+  var el = document.getElementById("map");
+  if (!el || typeof L === "undefined") return;
+  var ll = [22.835400, 113.676400];
+  var map = L.map("map", { center: ll, zoom: 15, minZoom: 12, maxZoom: 18, scrollWheelZoom: false });
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+  var pin = L.divIcon({ className: "tage-marker", html: '<div class="pin"></div>', iconSize: [22, 22], iconAnchor: [11, 11] });
+  L.marker(ll, { icon: pin }).addTo(map)
+    .bindPopup("<strong>TAGE FABRIC</strong><br>Room 1042, Building 2, Liansheng Plaza, 143 Liansheng Road, Humen, Dongguan, Guangdong, China<br><em>22.8354°N, 113.6764°E</em>")
+    .openPopup();
+})();
+</script>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
