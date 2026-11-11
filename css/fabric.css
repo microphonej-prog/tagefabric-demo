@@ -199,7 +199,6 @@
 @media (max-width: 1120px) {
   .site-header .nav-links { gap: 11px; }
   .site-header .nav-links a { font-size: 13.5px; }
-  .site-header .brand-name small { display: none; }
 }
 
 
@@ -272,4 +271,15 @@
 @media (max-width: 900px) {
   .site-header .lang-switch-mobile a { padding: 8px 6px; }
   .site-header .lang-switch-mobile svg { width: 26px; height: 18px; margin: 0 auto; }
+}
+
+/* —— 移动端保留品牌副标（YOGA & SPORTSWEAR KNITS）—— */
+@media (max-width: 1120px) {
+  .site-header .brand-name small { display: block; font-size: 10.5px; letter-spacing: 1px; }
+}
+@media (max-width: 560px) {
+  .site-header .brand-name strong { font-size: 15px; letter-spacing: .2px; }
+  .site-header .brand-name small { font-size: 9px; letter-spacing: .6px; white-space: nowrap; }
+  .site-header .brand { gap: 9px; }
+  .site-header .brand-mark { width: 34px; height: 34px; font-size: 16px; }
 }
