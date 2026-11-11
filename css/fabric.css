@@ -97,3 +97,35 @@
 .product-detail .thumb svg { width: 100% !important; height: 100% !important; border-radius: calc(var(--radius) - 2px); }
 .product-detail .thumb { aspect-ratio: 4/3; }
 .fab-row-thumb svg { width: 100% !important; height: 100% !important; }
+
+/* —— 双品类结构 —— */
+.more-link { margin-top: 28px; }
+.more-link .link { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid var(--amber); padding-bottom: 2px; }
+.more-link .link:hover { color: #a8781d; }
+
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; }
+.cat-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.cat-thumb { aspect-ratio: 16/7; background: var(--paper-2); }
+.cat-thumb svg { width: 100%; height: 100%; display: block; }
+.cat-body { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.cat-body h3 { font-size: 22px; color: var(--ink); }
+.cat-body h3 a:hover { color: var(--amber); }
+.cat-body p { font-size: 15px; color: var(--text-muted); flex: 1; }
+.cat-body .link { font-size: 14px; font-weight: 600; color: var(--ink); }
+.cat-body .link:hover { color: var(--amber); }
+
+.spec-table .group-row {
+  background: var(--ink); color: #fff; font-weight: 600;
+  letter-spacing: 1.2px; text-transform: uppercase; font-size: 12.5px;
+}
+.spec-table td a { color: var(--ink); font-weight: 600; }
+.spec-table td a:hover { color: var(--amber); }
+
+.footer-grid .f-label {
+  font-size: 11.5px; letter-spacing: 1.4px; text-transform: uppercase;
+  color: var(--amber); margin-top: 10px; padding-top: 8px;
+}
+.footer-grid .f-label:first-child { margin-top: 0; padding-top: 0; }
