@@ -1,22 +1,50 @@
 [
  {
   "file": "images/hero/hero-01.jpg",
-  "note": "用户提供 · 拳击（无可见水印，来源待确认）",
-  "scrim": 0.55
+  "note": "Ali vs Liston（1965，迈阿密）拳击（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
  },
  {
   "file": "images/hero/hero-02.jpg",
-  "note": "用户提供 · 篮球（已裁掉记分牌区域）",
-  "scrim": 0.55
+  "note": "橄榄球世界杯捧杯（绿色球衣）（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
  },
  {
   "file": "images/hero/hero-03.jpg",
-  "note": "用户提供 · 瑜伽室内 B&W（来源待确认）",
-  "scrim": 0.6
+  "note": "女足夺冠庆祝（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
  },
  {
   "file": "images/hero/hero-04.jpg",
-  "note": "用户提供 · 户外瑜伽（来源待确认）",
-  "scrim": 0.45
+  "note": "足球比赛（红色球衣 Crown Paints）（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-05.jpg",
+  "note": "伦敦 2012 奥运田径（含残奥选手）（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-06.jpg",
+  "note": "女子拳击 B&W（Everlast 装备）（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-07.jpg",
+  "note": "美国女足 15 号庆祝（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
+ },
+ {
+  "file": "images/hero/hero-08.jpg",
+  "note": "红土网球场庆祝（2400×1350，q72-80 渐进 JPEG）",
+  "size": "2400x1350",
+  "scope": "待确认"
  }
 ]
