@@ -206,3 +206,20 @@
   .site-header .nav-links a { font-size: 13.5px; }
   .site-header .brand-name small { display: none; }
 }
+
+
+/* —— FAQ 页 —— */
+.faq-jump {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 20px; margin-bottom: 34px; box-shadow: var(--shadow);
+}
+.faq-jump > span { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #a8781d; }
+.faq-jump ul { display: flex; gap: 8px; flex-wrap: wrap; }
+.faq-jump a {
+  font-size: 13.5px; color: var(--ink); background: var(--paper-2);
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 13px;
+}
+.faq-jump a:hover { border-color: var(--amber); color: #a8781d; }
+.faq-group { margin-bottom: 42px; scroll-margin-top: 90px; }
+.faq-gt { font-size: 20px; color: var(--ink); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--amber-soft); }
