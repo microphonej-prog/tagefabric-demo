@@ -83,11 +83,7 @@
 /* 按钮补充 */
 .btn-outline { border-color: var(--line); color: var(--ink); background: var(--white); }
 .btn-outline:hover { border-color: var(--amber); color: #a8781d; }
-.nav-cta {
-  border: 1px solid var(--amber) !important; border-radius: 999px;
-  padding: 7px 18px !important; color: #fff !important;
-}
-.nav-cta:hover { background: var(--amber); color: var(--ink) !important; }
+
 
 /* 移动端 */
 @media (max-width: 900px) {
@@ -192,7 +188,6 @@
 .site-header nav { flex: 0 1 auto; min-width: 0; }
 .site-header .nav-links { gap: 20px; flex-wrap: nowrap; }
 .site-header .nav-links a { font-size: 14.5px; white-space: nowrap; }
-.site-header .nav-links .nav-cta { padding: 6px 14px !important; }
 .site-header .lang-switch { margin-left: 4px; flex: 0 0 auto; gap: 4px; }
 .site-header .lang-switch a { padding: 3px 6px; font-size: 12px; }
 
