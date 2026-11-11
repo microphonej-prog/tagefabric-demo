@@ -323,3 +323,10 @@
     .site-header .nav-links { background: rgba(22, 34, 46, .98); }
   }
 }
+
+/* 非英文页上的产品卡：详情页为英文版，用 EN 小标提示 */
+.en-hint {
+  display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .6px;
+  color: #8c99a6; border: 1px solid currentColor; border-radius: 3px;
+  padding: 0 3px; margin-left: 4px; vertical-align: 1px; font-style: normal;
+}
