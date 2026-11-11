@@ -274,7 +274,7 @@
 }
 @media (max-width: 900px) {
   .site-header .lang-switch-mobile { gap: 10px; justify-content: flex-start; }
-  .site-header .lang-switch-mobile a { flex: 0 0 auto; padding: 6px 1px; }
+  .site-header .lang-switch-mobile a { flex: 0 0 auto; width: auto; padding: 6px 1px; }
   .site-header .lang-switch-mobile svg { width: 22px; height: 15px; }
 }
 
