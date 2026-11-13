@@ -330,3 +330,95 @@
   color: #8c99a6; border: 1px solid currentColor; border-radius: 3px;
   padding: 0 3px; margin-left: 4px; vertical-align: 1px; font-style: normal;
 }
+
+/* ===================================================================
+   首屏规格条（首页 hero）—— 采购参数前置：成分 / 克重 / 门幅 / 弹力 / 认证
+   =================================================================== */
+.spec-inline {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0 0 4px; padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+}
+.spec-inline span {
+  padding: 0 16px; border-left: 1px solid rgba(255, 255, 255, .22);
+  font-size: 11.5px; letter-spacing: .05em; color: #9fb0bd;
+}
+.spec-inline span:first-child { padding-left: 0; border-left: 0; }
+.spec-inline b {
+  display: block; font-size: 14.5px; color: #fff; font-weight: 600;
+  margin-bottom: 4px; letter-spacing: -.01em; line-height: 1.35;
+}
+
+/* ===================================================================
+   「按用途」集合页：用途切换条 + 长文案 + 带规格行的清单
+   =================================================================== */
+.use-row { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 36px; }
+.use-row a {
+  font-size: 13px; color: #2b3d4d; background: #fff;
+  border: 1px solid #cfd8df; border-radius: 2px; padding: 7px 12px;
+  text-decoration: none; text-decoration-line: none;
+  transition: border-color .15s ease, color .15s ease;
+}
+.use-row a:hover { border-color: #b8862c; color: #b8862c; text-decoration: none; }
+.use-row a.on { border-color: #b8862c; color: #b8862c; background: #fdf8ee; font-weight: 600; }
+
+.prose { max-width: 780px; }
+.prose h2 { font-size: clamp(21px, 2.2vw, 25px); letter-spacing: -.02em; margin: 0 0 14px; color: #16222e; }
+.prose h3 { font-size: 16.5px; margin: 26px 0 8px; color: #16222e; letter-spacing: -.01em; }
+.prose p { font-size: 15.5px; line-height: 1.85; color: #3f4d59; margin: 0 0 14px; }
+.prose h2 + p { margin-bottom: 10px; }
+.use-list { margin: 6px 0 0; padding-left: 20px; }
+.use-list li { font-size: 15px; line-height: 1.9; color: #3f4d59; }
+.use-list a { color: #2b3d4d; text-decoration-color: rgba(184, 134, 44, .45); }
+.use-list a:hover { color: #b8862c; }
+
+.pick-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0 40px; border-top: 1px solid #dde3e8;
+}
+.pick {
+  display: flex; gap: 16px; padding: 26px 0;
+  border-bottom: 1px solid #dde3e8;
+}
+.pick-thumb {
+  flex: 0 0 84px; height: 84px; overflow: hidden; border-radius: 2px; background: #e7ecf0;
+}
+.pick-thumb svg { width: 100% !important; height: 100% !important; display: block; }
+.pick-body { min-width: 0; }
+.pick h3 { font-size: 16.5px; margin: 0 0 6px; letter-spacing: -.01em; line-height: 1.35; }
+.pick h3 a { color: #16222e; text-decoration: none; }
+.pick h3 a:hover { color: #b8862c; }
+.pick-tag {
+  display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: #b8862c; border: 1px solid #e6d3a8;
+  background: #fdf8ee; padding: 1px 6px; border-radius: 2px;
+  margin-left: 8px; vertical-align: 2px;
+}
+.pick p { font-size: 13.5px; line-height: 1.65; color: #55636f; margin: 0 0 8px; }
+.pick-spec { font-size: 12px; letter-spacing: .02em; color: #7c8894; }
+.pick-spec b { color: #16222e; font-weight: 600; }
+
+@media (max-width: 900px) {
+  /* 手机/窄屏：规格条与用途条改为横向滑动，避免把 CTA 挤出首屏 */
+  .spec-inline {
+    display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 0;
+    margin-left: -24px; margin-right: -24px; padding: 0 24px 2px;
+    border-top: 0; padding-top: 0; margin-bottom: 0;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .spec-inline::-webkit-scrollbar { display: none; }
+  .spec-inline span { flex: 0 0 auto; padding: 0 14px; font-size: 10.5px; }
+  .spec-inline span:first-child { padding-left: 0; }
+  .spec-inline b { font-size: 12.5px; margin-bottom: 2px; }
+
+  .use-row { flex-wrap: nowrap; overflow-x: auto; gap: 7px; margin: 0 -24px 28px; padding: 0 24px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .use-row::-webkit-scrollbar { display: none; }
+  .use-row a { flex: 0 0 auto; font-size: 12px; padding: 6px 10px; }
+
+  .pick-grid { border-top: 0; grid-template-columns: 1fr; gap: 0; }
+  .pick { padding: 22px 0; flex-direction: column; gap: 12px; }
+  .pick-thumb { flex: 0 0 60px; width: 60px; height: 60px; }
+  .prose p { font-size: 15px; line-height: 1.8; }
+}
+
