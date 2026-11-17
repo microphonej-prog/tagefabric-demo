@@ -429,3 +429,14 @@
   .prose p { font-size: 15px; line-height: 1.8; }
 }
 
+
+
+/* ---------- FAQ 知识库条目（长文，正文可见） ---------- */
+.kb-item { max-width: 900px; margin: 0 0 30px; padding-bottom: 26px; border-bottom: 1px solid rgba(22,34,46,.09); }
+.kb-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.kb-item h3 { font-size: 17px; line-height: 1.45; color: var(--ink); margin: 0 0 12px; font-weight: 700; }
+.kb-item p { font-size: 15px; line-height: 1.78; color: var(--body, #45505c); margin: 0 0 12px; }
+.kb-item p:last-child { margin-bottom: 0; }
+.kb-more { font-size: 13.5px; color: var(--muted, #7a848f); }
+.kb-more a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 640px) { .kb-item h3 { font-size: 16px; } .kb-item p { font-size: 14.5px; } }
