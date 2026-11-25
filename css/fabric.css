@@ -458,3 +458,11 @@
 .kb-links { margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(22,34,46,.1); }
 .kb-back { margin-top: 28px; }
 @media (max-width: 640px) { .kb-grid { grid-template-columns: 1fr; } .kb-article p { font-size: 15.5px; } }
+
+
+/* ---------- 采购说明块（按米/按码/按重量） ---------- */
+.buy-note { margin-top: 26px; padding: 20px 22px; border-left: 3px solid var(--amber, #c8963e);
+  background: rgba(200,150,62,.06); border-radius: 0 8px 8px 0; max-width: 900px; }
+.buy-note .detail-h3 { margin-top: 0; }
+.buy-note p { margin: 0; font-size: 15px; line-height: 1.75; color: var(--body, #45505c); }
+@media (max-width: 640px) { .buy-note { padding: 16px 18px; } }
